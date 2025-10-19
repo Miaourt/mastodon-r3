@@ -1,0 +1,34 @@
+@use 'sass:color';
+
+$red: #fe5b59;
+$neutral: #2b2b2b;
+
+$redhue: color.hue($red);
+$greyhue: color.hue($neutral);
+$greysat: color.saturation($neutral);
+
+:root {
+  --color-indigo-50: #{hsl($redhue, 100%, 97%)};
+  --color-indigo-100: #{hsl($redhue, 100%, 94%)};
+  --color-indigo-200: #{hsl($redhue, 98%, 91%)};
+  --color-indigo-300: #{hsl($redhue, 97%, 87%)};
+  --color-indigo-400: #{hsl($redhue, 96%, 82%)};
+  --color-indigo-500: #{hsl($redhue, 97%, 77%)};
+  --color-indigo-600: #{hsl($redhue, 98%, 72%)};
+  --color-indigo-700: #{$red};
+  --color-indigo-800: #{hsl($redhue, 33%, 41%)};
+  --color-indigo-900: #{hsl($redhue, 28%, 34%)};
+  --color-indigo-950: #{hsl($redhue, 26%, 20%)};
+
+  --color-grey-50: #{hsl($greyhue, $greysat, 97%)};
+  --color-grey-100: #{hsl($greyhue, $greysat, 94%)};
+  --color-grey-200: #{hsl($greyhue, $greysat, 86%)};
+  --color-grey-300: #{hsl($greyhue, $greysat, 74%)};
+  --color-grey-400: #{hsl($greyhue, $greysat, 60%)};
+  --color-grey-500: #{hsl($greyhue, $greysat, 48%)};
+  --color-grey-600: #{hsl($greyhue, $greysat, 39%)};
+  --color-grey-700: #{hsl($greyhue, $greysat, 32%)};
+  --color-grey-800: #{hsl($greyhue, $greysat, 27%)};
+  --color-grey-900: #{hsl($greyhue, $greysat, 15%)};
+  --color-grey-950: #{hsl($greyhue, $greysat, 11%)};
+}

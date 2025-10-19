@@ -11,17 +11,17 @@ module BrandingHelper
   end
 
   def _logo_as_symbol_wordmark
-    tag.svg(viewBox: '0 0 261 66', class: 'logo logo--wordmark') do
-      tag.title('Mastodon') +
+    tag.svg(viewBox: '0 0 75 16', class: 'logo logo--wordmark') do
+      tag.title('RaRu.Re') +
         tag.use(href: '#logo-symbol-wordmark')
     end
   end
 
   def _logo_as_symbol_icon
-    tag.svg(tag.use(href: '#logo-symbol-icon'), viewBox: '0 0 79 79', class: 'logo logo--icon')
+    tag.svg(tag.use(href: '#logo-symbol-icon'), viewBox: '0 0 4.233 4.233', class: 'logo logo--icon')
   end
 
   def render_logo
-    image_tag(frontend_asset_path('images/logo.svg'), alt: 'Mastodon', class: 'logo logo--icon')
+    image_tag(frontend_asset_path('images/logo.svg'), alt: 'RaRu.Re', class: 'logo logo--icon')
   end
 end
